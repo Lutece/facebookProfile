@@ -1,15 +1,17 @@
-/**
- * 09. 09 과제
- *
- * 계산기 여러가지 버전 만들기
- *
- * 1. Quick Start 용도 - DOM을 먼저 생성한 다음에 이벤트를 바인딩해서 input 값을 가져와 계산하는 컨셉
- * 2. 기능을 모듈화하여 개발해보기 (JS) - Observer + MVC 모델을 Pure로 구현해보기
- * 3. 웹 컴포넌트를 통해 실제로 계산기를 컴포넌트화하여 구현하는 컨셉
- * 4. Vue를 통해 컴포넌트화하여 계산기 만들기
- *
- * 이거 진행되는 과정 Posting하기 - 컴포넌트 정리겸.. Vue 정리겸..
- *
- * gulp 정리해보기..
- *
- **/
+window.fbAsyncInit = function() {
+    FB.init({
+        appId            : '157517884831684',
+        autoLogAppEvents : true,
+        xfbml            : true,
+        version          : 'v2.10'
+    });
+    FB.AppEvents.logPageView();
+};
+
+(function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
